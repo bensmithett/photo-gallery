@@ -1,2 +1,5 @@
 # photo-gallery
-A wee throwaway app that let's me play around with Redux
+
+Nothing to see here. A wee throwaway app I'm using to play around with some new tools.
+
+

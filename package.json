@@ -1,0 +1,16 @@
+{
+  "name": "photo-gallery",
+  "version": "1.0.0",
+  "description": "A photo gallery",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bensmithett/photo-gallery.git"
+  },
+  "author": "Ben Smithett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bensmithett/photo-gallery/issues"
+  },
+  "homepage": "https://github.com/bensmithett/photo-gallery#readme"
+}
