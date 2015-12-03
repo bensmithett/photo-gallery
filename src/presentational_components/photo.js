@@ -4,7 +4,7 @@ const Photo = ({id, url, username, selected, onClick}) => {
   const styles = selected ? {border: '3px solid blue'} : {}
 
   return (
-    <div style={styles} onClick={() => onClick(id)} >
+    <div style={styles} onClick={() => {if (!selected) onClick(id)}} >
       <img src={url} width='200' />
       by {username}
     </div>

@@ -1,7 +1,9 @@
 import React from 'react'
 import Photo from 'presentational_components/photo'
+import UserForm from 'presentational_components/user_form'
+import UserList from 'presentational_components/user_list'
 
-const PhotoAlbum = ({photos, users, selectedPhotoID, onPhotoClick, onButtonClick}) => (
+const PhotoAlbum = ({photos, users, selectedPhotoID, onPhotoClick, onFormSubmit}) => (
   <div>
     {
       Object.keys(photos).map((photoID) => (
@@ -16,8 +18,9 @@ const PhotoAlbum = ({photos, users, selectedPhotoID, onPhotoClick, onButtonClick
       ))
     }
 
-    <button onClick={() => onButtonClick('ben')}>Fetch Ben's photos</button>
-    <button onClick={() => onButtonClick('lucas')}>Fetch Lucas' photos</button>
+    <UserForm onSubmit={onFormSubmit} />
+
+    <UserList users={users} />
   </div>
 )
 

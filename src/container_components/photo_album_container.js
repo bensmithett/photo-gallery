@@ -18,7 +18,7 @@ const mapDispatchToProps = (dispatch) => ({
   onPhotoClick (id) {
     dispatch(selectPhoto(id))
   },
-  onButtonClick (flickrUserID) {
+  onFormSubmit (flickrUserID) {
     dispatch(fetchPhotosForUser(flickrUserID))
   }
 })
