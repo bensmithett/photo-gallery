@@ -1,0 +1,12 @@
+{
+  "user": {
+    "id": "lp999",
+    "username": "lucas"
+  },
+  "photos": [
+    {
+      "id": "photo1",
+      "url": "https://farm1.staticflickr.com/640/20395641339_5408078d82_k.jpg"
+    }
+  ]
+}

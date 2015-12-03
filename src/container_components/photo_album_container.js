@@ -4,10 +4,10 @@ import React from 'react'
 import PhotoAlbum from 'presentational_components/photo_album'
 import {connect} from 'react-redux'
 import selectPhoto from 'action_creators/select_photo'
+import fetchPhotosForUser from 'action_creators/async/fetch_photos_for_user'
 
 // Which props do we want to inject, given the global state?
 const mapStateToProps = (state) => ({
-  album: state.data.album,
   photos: state.data.photos,
   users: state.data.users,
   selectedPhotoID: state.uiState.selectedPhotoID
@@ -17,6 +17,9 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   onPhotoClick (id) {
     dispatch(selectPhoto(id))
+  },
+  onButtonClick (flickrUserID) {
+    dispatch(fetchPhotosForUser(flickrUserID))
   }
 })
 

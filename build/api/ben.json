@@ -1,0 +1,16 @@
+{
+  "user": {
+    "id": "bs999",
+    "username": "ben"
+  },
+  "photos": [
+    {
+      "id": "photo2",
+      "url": "https://farm9.staticflickr.com/8806/17466004341_cf8ec2485e_k.jpg"
+    },
+    {
+      "id": "photo3",
+      "url": "https://farm6.staticflickr.com/5449/17772137531_46722e8ab5_k.jpg"
+    }
+  ]
+}

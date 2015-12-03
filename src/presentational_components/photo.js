@@ -2,8 +2,6 @@ import React from 'react'
 
 const Photo = ({id, url, username, selected, onClick}) => {
   const styles = selected ? {border: '3px solid blue'} : {}
-  
-  console.log(id, selected, styles)
 
   return (
     <div style={styles} onClick={() => onClick(id)} >
