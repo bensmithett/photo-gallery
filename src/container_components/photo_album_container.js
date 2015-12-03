@@ -7,9 +7,9 @@ import selectPhoto from 'action_creators/select_photo'
 
 // Which props do we want to inject, given the global state?
 const mapStateToProps = (state) => ({
-  album: state.album,
-  photos: state.photos,
-  users: state.users,
+  album: state.data.album,
+  photos: state.data.photos,
+  users: state.data.users,
   selectedPhotoID: state.uiState.selectedPhotoID
 })
 

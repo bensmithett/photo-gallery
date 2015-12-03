@@ -1,14 +1,12 @@
 import {combineReducers} from 'redux'
-import albumReducer from 'reducers/album_reducer'
-import photosReducer from 'reducers/photos_reducer'
-import usersReducer from 'reducers/users_reducer'
+import dataReducer from 'reducers/data_reducer'
 import uiStateReducer from 'reducers/ui_state_reducer'
+import networkStateReducer from 'reducers/network_state_reducer'
 
 const appReducer = combineReducers({
-  album: albumReducer,
-  photos: photosReducer,
-  users: usersReducer,
-  uiState: uiStateReducer
+  data: dataReducer,
+  uiState: uiStateReducer,
+  networkState: networkStateReducer
 })
 
 export default appReducer
