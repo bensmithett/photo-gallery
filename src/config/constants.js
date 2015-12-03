@@ -1,6 +1,7 @@
 export const ActionTypes = {
   FETCH_PHOTOS_FOR_USER: 'FETCH_PHOTOS_FOR_USER',
-  SELECT_PHOTO: 'SELECT_PHOTO'
+  SELECT_PHOTO: 'SELECT_PHOTO',
+  AUTHENTICATE: 'AUTHENTICATE'
 }
 
 export const AsyncActionStages = {
