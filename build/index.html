@@ -2,6 +2,29 @@
 <html lang='en'>
   <head>
     <title>Photo Gallery</title>
+    <style>
+      .fade {
+        transition: opacity 1s linear;
+      }
+
+      .fade-enter {
+        opacity: 0;
+      }
+
+      .fade-enter.fade-enter-active {
+        opacity: 1;
+        transition: opacity 1s linear;
+      }
+
+      .fade-leave {
+        opacity: 1;
+      }
+
+      .fade-leave.fade-leave-active {
+        opacity: 0;
+        transition: opacity 1s linear;
+      }
+    </style>
   </head>
   <body>
     <div class='js-app-shell'></div>

@@ -2,6 +2,7 @@ import React from 'react'
 import Photo from 'presentational_components/photo'
 import UserForm from 'presentational_components/user_form'
 import UserList from 'presentational_components/user_list'
+import AnimationTest from 'presentational_components/animation_test'
 
 const PhotoAlbum = ({photos, users, selectedPhotoID, onPhotoClick, onFormSubmit}) => (
   <div>
@@ -21,6 +22,8 @@ const PhotoAlbum = ({photos, users, selectedPhotoID, onPhotoClick, onFormSubmit}
     <UserForm onSubmit={onFormSubmit} />
 
     <UserList users={users} />
+
+    <AnimationTest />
   </div>
 )
 
